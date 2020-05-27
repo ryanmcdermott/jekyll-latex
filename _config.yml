@@ -1,0 +1,49 @@
+# Site Info
+title:              "Ryan McDermott -- Random learnings"
+description:        "Software developer and musician"
+#google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
+google_analytics:   UA-114779218-1
+
+# Author Info
+author_name:        "Ryan McDermott" # Your name here
+author_email:       ryantmcdermott@gmail.com # Your email here
+author_gravatar:    c0a880b46cd8ea466ebaa1bd1196ca80 # Your Gravatar md5 hash here for logo
+
+# Site Settings
+url:                 https://ryanmcdermott.me
+baseurl:
+permalink:          /posts/:title # Post permalink
+timezone:           America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to false to disable
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
