@@ -198,18 +198,20 @@
   }
 
   /* Nested ordered list for ToC */
-  nav ol {
+  .markdown-toc ol, ul {
 	counter-reset: item;
 	padding-left: 2rem;
+
+	li {
+		display: block;
+	  }
+	  li:before {
+		content: counters(item, '.') ' ';
+		counter-increment: item;
+		padding-right: 0.85rem;
+	  }
   }
-  nav li {
-	display: block;
-  }
-  nav li:before {
-	content: counters(item, '.') ' ';
-	counter-increment: item;
-	padding-right: 0.85rem;
-  }
+
 
   /* Center definitions (most useful for display equations) */
   dl dd {
