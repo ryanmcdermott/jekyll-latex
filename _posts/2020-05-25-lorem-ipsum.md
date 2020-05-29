@@ -39,7 +39,47 @@ Etiam erat velit scelerisque in. Amet aliquam id diam maecenas ultricies. Ac tin
 
 # Theorems, Definitions, and Proofs
 
-Elementum pulvinar etiam non quam lacus suspendisse. Malesuada pellentesque elit eget gravida cum sociis natoque. Vestibulum sed arcu non odio. Quam lacus suspendisse faucibus interdum posuere. Faucibus in ornare quam viverra orci sagittis eu volutpat.
+{% theorem %}
+The real numbers $\mathbb{R}$ are uncountable
+{% endtheorem %}
+
+{% proof %}
+If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
+C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
+\ldots, 9\},$
+are the digits in decimal expansion. Now consider a real
+number
+$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
+with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
+contradiction.
+{% endproof %}
+
+<pre>
+<code>
+{% raw %}
+{% theorem %}
+{% endraw %}
+The real numbers $\mathbb{R}$ are uncountable
+{% raw %}
+{% endtheorem %}
+{% endraw %}
+
+{% raw %}
+{% proof %}
+{% endraw %}
+If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
+C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
+\ldots, 9\},$
+are the digits in decimal expansion. Now consider a real
+number
+$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
+with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
+contradiction.
+{% raw %}
+{% endproof %}
+{% endraw %}
+</code>
+</pre>
 
 ## Definition Lists
 First Term
