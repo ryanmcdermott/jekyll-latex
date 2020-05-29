@@ -8,12 +8,6 @@
 <title>{{ site.title }}</title>
 {% endif %}
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@{{ site.twitter_username }}" />
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-<meta name="twitter:description"
-	content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
-
 <meta name="description"
 	content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 

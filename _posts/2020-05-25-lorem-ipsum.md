@@ -37,13 +37,45 @@ Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Maur
 
 Etiam erat velit scelerisque in. Amet aliquam id diam maecenas ultricies. Ac tincidunt vitae semper quis lectus nulla.
 
-# Ut ornare lectus
+# Theorems, Definitions, and Proofs
 
 Elementum pulvinar etiam non quam lacus suspendisse. Malesuada pellentesque elit eget gravida cum sociis natoque. Vestibulum sed arcu non odio. Quam lacus suspendisse faucibus interdum posuere. Faucibus in ornare quam viverra orci sagittis eu volutpat.
 
-## Purus sit
+## Definition Lists
+First Term
+: This is the definition of the first term.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt nunc pulvinar sapien et.
+Triple Integral
+: $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
+## Blockquotes
+
+> Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+<cite>— Abraham Lincoln</cite>
+
+<pre>
+<code>
+&gt; Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+&lt;cite&gt;— Abraham Lincoln&lt;/cite&gt;
+</code>
+</pre>
+
+## Tables
+
+|Header 1|Header 2|Header 3|
+|--- |--- |--- |
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+
+<pre>
+<code>
+|Header 1|Header 2|Header 3|
+|--- |--- |--- |
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+</code>
+</pre>
 
 ### Sit amet porttitor
 
