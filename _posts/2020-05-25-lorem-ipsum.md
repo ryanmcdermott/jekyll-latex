@@ -87,6 +87,18 @@ First Term
 
 Triple Integral
 : $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
+
+<pre>
+<code>
+First Term
+: This is the definition of the first term.
+
+Triple Integral
+: $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
+
+</code>
+</pre>
+
 ## Blockquotes
 
 > Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
