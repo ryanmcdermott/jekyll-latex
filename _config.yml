@@ -1,16 +1,16 @@
 # Site Info
-title:              "Ryan McDermott -- Random learnings"
-description:        "Software developer and musician"
-#google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
-google_analytics:   UA-114779218-1
+title:              "Jekyll Latex"
+description:        "A pretty good Jekyll theme"
+google_verify:      abc123 # Put your Google Verification here
+google_analytics:   UA-123
 
 # Author Info
-author_name:        "Ryan McDermott" # Your name here
-author_email:       ryantmcdermott@gmail.com # Your email here
+author_name:        "John Doe" # Your name here
+author_email:       john@doe.com # Your email here
 author_gravatar:    c0a880b46cd8ea466ebaa1bd1196ca80 # Your Gravatar md5 hash here for logo
 
 # Site Settings
-url:                 https://ryanmcdermott.me
+url:                 https://yoursite.com
 baseurl:
 permalink:          /posts/:title # Post permalink
 timezone:           America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
