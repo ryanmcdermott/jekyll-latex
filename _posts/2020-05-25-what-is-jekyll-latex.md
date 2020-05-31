@@ -154,4 +154,29 @@ sharpening the axe.
 TODO
 
 ## Lists
-TODO
+
+### Unordered List
+- List Item 1
+- List Item 2
+- List Item 3
+
+### Ordered List
+
+1. List Item 1
+1. List Item 2
+1. List Item 3
+
+```
+{% raw %}
+### Unordered List
+- List Item 1
+- List Item 2
+- List Item 3
+
+### Ordered List
+
+1. List Item 1
+1. List Item 2
+1. List Item 3
+{% endraw %}
+```
