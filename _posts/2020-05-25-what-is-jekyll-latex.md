@@ -151,7 +151,17 @@ sharpening the axe.
 </pre>
 
 ## Images
-TODO
+
+{% include image.html url="/assets/latex_image_example.jpeg" description="Mountain landscape by John Towner." %}
+
+```
+{% raw %}
+{% include image.html
+    url="/assets/latex_image_example.jpeg"
+    description="Mountain landscape by John Towner."
+%}
+{% endraw %}
+```
 
 ## Lists
 
