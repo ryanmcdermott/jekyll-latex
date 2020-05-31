@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+
+    <title>What Is jekyll-latex?
+        ·
+        Jekyll Latex</title>
+
+
+<meta name="description" content="AbstractThis project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of LaTeX and the ...">
+
+
+    <meta name="google-site-verification" content="abc123">
+
+
+<link rel="icon" href="https://yoursite.com/assets/favicon.png">
+<link rel="apple-touch-icon" href="https://yoursite.com/assets/touch-icon.png">
+<link rel="stylesheet" href="https://yoursite.com/assets/core.css">
+<link rel="canonical" href="https://yoursite.com/posts/what-is-jekyll-latex">
+<link rel="alternate" type="application/atom+xml" title="Jekyll Latex" href="https://yoursite.com/feed.xml"/>
+
+
+
+
+    <script>
+	MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		}
+	};
+</script>
+    <script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+	<aside class="logo">
+    
+
+    <a href="/">
+        <img class="gravatar" src="https://www.gravatar.com/avatar/e98e5de03e97f8498caab87e85a43f9a.png?s=80">
+    </a>
+    <span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+	<main>
+		<article>
+    <div class="center">
+        <h1>What Is jekyll-latex?</h1>
+        <p class="author">
+            John Doe
+            <br/>
+            May 25, 2020
+        </p>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="abstract"><h5>Abstract</h5><p>
+This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of <span class="latex">L<span>a</span>T<span>e</span>X</span> and the MathJax library so you can render gorgeous equations like this one below:
+$$ J(\theta) =\frac{1}{2m}
+[\sum^m_{i=1}(h_\theta(x^{(i)}) -
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
+</p></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% abstract %}
+This project is called jekyll-latex. It features the beautiful
+typography of &lt;span class="latex"&gt;L&lt;span&gt;a&lt;/span&gt;T&lt;span&gt;
+e&lt;/span&gt;X&lt;/span&gt; and it includes MathJax so you can render
+gorgeous equations like this one below:
+$$ J(\theta) =\frac{1}{2m}
+[\sum^m_{i=1}(h_\theta(x^{(i)}) -
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
+{% endabstract %}
+
+</code></pre></div></div>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul id="markdown-toc">
+  <li><a href="#table-of-contents" id="markdown-toc-table-of-contents">Table of Contents</a></li>
+  <li><a href="#theorems-definitions-and-proofs" id="markdown-toc-theorems-definitions-and-proofs">Theorems, Definitions, and Proofs</a></li>
+  <li><a href="#html-elements" id="markdown-toc-html-elements">HTML Elements</a>    <ul>
+      <li><a href="#text-formatting" id="markdown-toc-text-formatting">Text Formatting</a></li>
+      <li><a href="#definition-lists" id="markdown-toc-definition-lists">Definition Lists</a></li>
+      <li><a href="#blockquotes" id="markdown-toc-blockquotes">Blockquotes</a></li>
+      <li><a href="#tables" id="markdown-toc-tables">Tables</a></li>
+      <li><a href="#images" id="markdown-toc-images">Images</a></li>
+      <li><a href="#lists" id="markdown-toc-lists">Lists</a>        <ul>
+          <li><a href="#unordered-list" id="markdown-toc-unordered-list">Unordered List</a></li>
+          <li><a href="#ordered-list" id="markdown-toc-ordered-list">Ordered List</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# Table of Contents
+* TOC
+{:toc}
+
+</code></pre></div></div>
+
+<h1 id="theorems-definitions-and-proofs">Theorems, Definitions, and Proofs</h1>
+
+<div class="theorem">
+The real numbers $\mathbb{R}$ are uncountable
+</div>
+
+<div class="proof">
+If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
+C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
+\ldots, 9\},$
+are the digits in decimal expansion. Now consider a real
+number
+$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
+with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
+contradiction.
+</div>
+
+<pre>
+<code>
+
+{% theorem %}
+
+The real numbers $\mathbb{R}$ are uncountable
+
+{% endtheorem %}
+
+
+
+{% proof %}
+
+If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence
+there exists a map C from $\mathbb{N}$ onto [0, 1] with
+$$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
+\ldots, 9\},$
+are the digits in decimal expansion. Now consider a real number
+$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
+with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
+\mathbb{N} .$ Hence $C$ is not onto. A contradiction.
+
+{% endproof %}
+
+</code>
+</pre>
+
+<h1 id="html-elements">HTML Elements</h1>
+
+<h2 id="text-formatting">Text Formatting</h2>
+
+<p>This sentence is <strong>bold</strong>. This sentence is <em>italic</em>. <small>Small</small> text is for fine print. Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, <del>deleted</del>, or <mark>highlighted</mark>. You would use a <a href="https://github.com/ryanmcdermott/jekyll-latex">hyperlink</a> to go to a new page. Keyboard input elements like <kbd>Cmd + Shift</kbd> are used to display textual user input.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This sentence is **bold**. This sentence is *italic*.
+&lt;small&gt;Small&lt;/small&gt; text is for fine print. Your
+copy can also be &lt;sub&gt;subscripted&lt;/sub&gt; and
+&lt;sup&gt;superscripted&lt;/sup&gt;, &lt;ins&gt;inserted&lt;/ins&gt;,
+~~deleted~~, or &lt;mark&gt;highlighted&lt;/mark&gt;. You would
+use a [hyperlink]
+(https://github.com/ryanmcdermott/jekyll-latex) to
+go to a new page. Keyboard input elements like
+&lt;kbd&gt;Cmd + Shift&lt;/kbd&gt; are used to display textual
+user input.
+</code></pre></div></div>
+
+<h2 id="definition-lists">Definition Lists</h2>
+<dl>
+  <dt>First Term</dt>
+  <dd>This is the definition of the first term.</dd>
+  <dt>Triple Integral</dt>
+  <dd>$\iiint_V \mu(u,v,w) \,du\,dv\,dw$</dd>
+</dl>
+
+<pre>
+<code>
+First Term
+: This is the definition of the first term.
+
+Triple Integral
+: $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
+
+</code>
+</pre>
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+<blockquote>
+  <p>Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+<cite>— Abraham Lincoln</cite></p>
+</blockquote>
+
+<pre>
+<code>
+&gt; Give me six hours to chop down a tree and I will spend the first four
+sharpening the axe.
+&lt;cite&gt;— Abraham Lincoln&lt;/cite&gt;
+</code>
+</pre>
+
+<h2 id="tables">Tables</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Description 1</td>
+      <td>Description 2</td>
+      <td>Description 3</td>
+    </tr>
+    <tr>
+      <td>Description 1</td>
+      <td>Description 2</td>
+      <td>Description 3</td>
+    </tr>
+    <tr>
+      <td>Description 1</td>
+      <td>Description 2</td>
+      <td>Description 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre>
+<code>
+|Header 1|Header 2|Header 3|
+|--- |--- |--- |
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+</code>
+</pre>
+
+<h2 id="images">Images</h2>
+
+<figure class="image">
+    <img src="/assets/latex_image_example.jpeg" alt="Mountain landscape by John Towner." />
+    <figcaption>Mountain landscape by John Towner.</figcaption>
+</figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% include image.html
+    url="/assets/latex_image_example.jpeg"
+    description="Mountain landscape by John Towner."
+%}
+
+</code></pre></div></div>
+
+<h2 id="lists">Lists</h2>
+
+<h3 id="unordered-list">Unordered List</h3>
+<ul>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ul>
+
+<h3 id="ordered-list">Ordered List</h3>
+
+<ol>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Unordered List
+- List Item 1
+- List Item 2
+- List Item 3
+
+### Ordered List
+
+1. List Item 1
+1. List Item 2
+1. List Item 3
+
+</code></pre></div></div>
+
+
+</article>
+
+<div class="page-navigation">
+    
+    <a class="home" href="https://yoursite.com" title="Back to Homepage">Home</a>
+    
+</div>
+	</main>
+
+	<div class="footer">
+    <span class="block">&copy;
+        2020
+        John Doe</span>
+</div>
+
+</body>
+
+</html>
