@@ -1,22 +1,245 @@
----
-layout: null
----
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title }}</title>
-    <description>{{ site.description }}</description>
-    <link>{{ site.baseurl | prepend: site.url }}</link>
-    {% for post in site.posts %}
-      {% unless post.draft %}
+    <title>Jekyll Latex</title>
+    <description>A pretty good Jekyll theme</description>
+    <link>https://yoursite.com</link>
+    
+      
         <item>
-          <title>{{ post.title | xml_escape }}</title>
-          <description>{{ post.content | xml_escape }}</description>
-          <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-          <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-          <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+          <title>What Is jekyll-latex?</title>
+          <description>&lt;div class=&quot;abstract&quot;&gt;&lt;h5&gt;Abstract&lt;/h5&gt;&lt;p&gt;
+This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of &lt;span class=&quot;latex&quot;&gt;L&lt;span&gt;a&lt;/span&gt;T&lt;span&gt;e&lt;/span&gt;X&lt;/span&gt; and the MathJax library so you can render gorgeous equations like this one below:
+$$ J(\theta) =\frac{1}{2m}
+[\sum^m_{i=1}(h_\theta(x^{(i)}) -
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
+&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+{% abstract %}
+This project is called jekyll-latex. It features the beautiful
+typography of &amp;lt;span class=&quot;latex&quot;&amp;gt;L&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;T&amp;lt;span&amp;gt;
+e&amp;lt;/span&amp;gt;X&amp;lt;/span&amp;gt; and it includes MathJax so you can render
+gorgeous equations like this one below:
+$$ J(\theta) =\frac{1}{2m}
+[\sum^m_{i=1}(h_\theta(x^{(i)}) -
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
+{% endabstract %}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot; id=&quot;markdown-toc-table-of-contents&quot;&gt;Table of Contents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#theorems-definitions-and-proofs&quot; id=&quot;markdown-toc-theorems-definitions-and-proofs&quot;&gt;Theorems, Definitions, and Proofs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#html-elements&quot; id=&quot;markdown-toc-html-elements&quot;&gt;HTML Elements&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#text-formatting&quot; id=&quot;markdown-toc-text-formatting&quot;&gt;Text Formatting&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#definition-lists&quot; id=&quot;markdown-toc-definition-lists&quot;&gt;Definition Lists&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blockquotes&quot; id=&quot;markdown-toc-blockquotes&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#tables&quot; id=&quot;markdown-toc-tables&quot;&gt;Tables&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#images&quot; id=&quot;markdown-toc-images&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lists&quot; id=&quot;markdown-toc-lists&quot;&gt;Lists&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#unordered-list&quot; id=&quot;markdown-toc-unordered-list&quot;&gt;Unordered List&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#ordered-list&quot; id=&quot;markdown-toc-ordered-list&quot;&gt;Ordered List&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+# Table of Contents
+* TOC
+{:toc}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;theorems-definitions-and-proofs&quot;&gt;Theorems, Definitions, and Proofs&lt;/h1&gt;
+
+&lt;div class=&quot;theorem&quot;&gt;
+The real numbers $\mathbb{R}$ are uncountable
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
+C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
+\ldots, 9\},$
+are the digits in decimal expansion. Now consider a real
+number
+$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
+with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
+contradiction.
+&lt;/div&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+
+{% theorem %}
+
+The real numbers $\mathbb{R}$ are uncountable
+
+{% endtheorem %}
+
+
+
+{% proof %}
+
+If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence
+there exists a map C from $\mathbb{N}$ onto [0, 1] with
+$$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
+\ldots, 9\},$
+are the digits in decimal expansion. Now consider a real number
+$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
+with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
+\mathbb{N} .$ Hence $C$ is not onto. A contradiction.
+
+{% endproof %}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h1 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h1&gt;
+
+&lt;h2 id=&quot;text-formatting&quot;&gt;Text Formatting&lt;/h2&gt;
+
+&lt;p&gt;This sentence is &lt;strong&gt;bold&lt;/strong&gt;. This sentence is &lt;em&gt;italic&lt;/em&gt;. &lt;small&gt;Small&lt;/small&gt; text is for fine print. Your copy can also be &lt;sub&gt;subscripted&lt;/sub&gt; and &lt;sup&gt;superscripted&lt;/sup&gt;, &lt;ins&gt;inserted&lt;/ins&gt;, &lt;del&gt;deleted&lt;/del&gt;, or &lt;mark&gt;highlighted&lt;/mark&gt;. You would use a &lt;a href=&quot;https://github.com/ryanmcdermott/jekyll-latex&quot;&gt;hyperlink&lt;/a&gt; to go to a new page. Keyboard input elements like &lt;kbd&gt;Cmd + Shift&lt;/kbd&gt; are used to display textual user input.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This sentence is **bold**. This sentence is *italic*.
+&amp;lt;small&amp;gt;Small&amp;lt;/small&amp;gt; text is for fine print. Your
+copy can also be &amp;lt;sub&amp;gt;subscripted&amp;lt;/sub&amp;gt; and
+&amp;lt;sup&amp;gt;superscripted&amp;lt;/sup&amp;gt;, &amp;lt;ins&amp;gt;inserted&amp;lt;/ins&amp;gt;,
+~~deleted~~, or &amp;lt;mark&amp;gt;highlighted&amp;lt;/mark&amp;gt;. You would
+use a [hyperlink]
+(https://github.com/ryanmcdermott/jekyll-latex) to
+go to a new page. Keyboard input elements like
+&amp;lt;kbd&amp;gt;Cmd + Shift&amp;lt;/kbd&amp;gt; are used to display textual
+user input.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;definition-lists&quot;&gt;Definition Lists&lt;/h2&gt;
+&lt;dl&gt;
+  &lt;dt&gt;First Term&lt;/dt&gt;
+  &lt;dd&gt;This is the definition of the first term.&lt;/dd&gt;
+  &lt;dt&gt;Triple Integral&lt;/dt&gt;
+  &lt;dd&gt;$\iiint_V \mu(u,v,w) \,du\,dv\,dw$&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+First Term
+: This is the definition of the first term.
+
+Triple Integral
+: $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+&lt;cite&gt;— Abraham Lincoln&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+&amp;gt; Give me six hours to chop down a tree and I will spend the first four
+sharpening the axe.
+&amp;lt;cite&amp;gt;— Abraham Lincoln&amp;lt;/cite&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+      &lt;th&gt;Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Description 1&lt;/td&gt;
+      &lt;td&gt;Description 2&lt;/td&gt;
+      &lt;td&gt;Description 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Description 1&lt;/td&gt;
+      &lt;td&gt;Description 2&lt;/td&gt;
+      &lt;td&gt;Description 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Description 1&lt;/td&gt;
+      &lt;td&gt;Description 2&lt;/td&gt;
+      &lt;td&gt;Description 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+|Header 1|Header 2|Header 3|
+|--- |--- |--- |
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+|Description 1|Description 2|Description 3|
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/latex_image_example.jpeg&quot; alt=&quot;Mountain landscape by John Towner.&quot; /&gt;
+    &lt;figcaption&gt;Mountain landscape by John Towner.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+{% include image.html
+    url=&quot;/assets/latex_image_example.jpeg&quot;
+    description=&quot;Mountain landscape by John Towner.&quot;
+%}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;h3 id=&quot;unordered-list&quot;&gt;Unordered List&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ordered-list&quot;&gt;Ordered List&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### Unordered List
+- List Item 1
+- List Item 2
+- List Item 3
+
+### Ordered List
+
+1. List Item 1
+1. List Item 2
+1. List Item 3
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+          <pubDate>2020-05-25T00:00:00-07:00</pubDate>
+          <link>https://yoursite.com/posts/what-is-jekyll-latex</link>
+          <guid isPermaLink="true">https://yoursite.com/posts/what-is-jekyll-latex</guid>
         </item>
-      {% endunless %}
-    {% endfor %}
+      
+    
   </channel>
 </rss>
