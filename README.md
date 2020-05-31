@@ -1,10 +1,10 @@
 # jekyll-latex
 
 <p align="center">
-    <img src="./assets/jekyll_latex_covert_art.png">
-
-    [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg)
+    <img src="./assets/jekyll_latex_cover_art.png">
 </p>
+
+  [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg)
 
 ## Features
 - LaTeX typography
