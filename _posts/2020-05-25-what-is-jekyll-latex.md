@@ -67,14 +67,14 @@ The real numbers $\mathbb{R}$ are uncountable
 {% raw %}
 {% proof %}
 {% endraw %}
-If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
-C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
+If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence
+there exists a map C from $\mathbb{N}$ onto [0, 1] with
+$$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
 \ldots, 9\},$
-are the digits in decimal expansion. Now consider a real
-number
+are the digits in decimal expansion. Now consider a real number
 $$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
-with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
-contradiction.
+with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
+\mathbb{N} .$ Hence $C$ is not onto. A contradiction.
 {% raw %}
 {% endproof %}
 {% endraw %}
@@ -83,6 +83,23 @@ contradiction.
 
 
 # HTML Elements
+
+## Text Formatting
+
+This sentence is **bold**. This sentence is *italic*. <small>Small</small> text is for fine print. Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, ~~deleted~~, or <mark>highlighted</mark>. You would use a [hyperlink](https://github.com/ryanmcdermott/jekyll-latex) to go to a new page. Keyboard input elements like <kbd>Cmd + Shift</kbd> are used to display textual user input.
+
+```
+This sentence is **bold**. This sentence is *italic*.
+<small>Small</small> text is for fine print. Your
+copy can also be <sub>subscripted</sub> and
+<sup>superscripted</sup>, <ins>inserted</ins>,
+~~deleted~~, or <mark>highlighted</mark>. You would
+use a [hyperlink]
+(https://github.com/ryanmcdermott/jekyll-latex) to
+go to a new page. Keyboard input elements like
+<kbd>Cmd + Shift</kbd> are used to display textual
+user input.
+```
 
 ## Definition Lists
 First Term
@@ -109,7 +126,8 @@ Triple Integral
 
 <pre>
 <code>
-&gt; Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+&gt; Give me six hours to chop down a tree and I will spend the first four
+sharpening the axe.
 &lt;cite&gt;— Abraham Lincoln&lt;/cite&gt;
 </code>
 </pre>
@@ -131,3 +149,9 @@ Triple Integral
 |Description 1|Description 2|Description 3|
 </code>
 </pre>
+
+## Images
+TODO
+
+## Lists
+TODO
