@@ -88,6 +88,14 @@ body {
 	background-color: hsl(210, 20%, 98%);
 
 	text-rendering: optimizeLegibility;
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 /* Justify and hyphenate all paragraphs */
