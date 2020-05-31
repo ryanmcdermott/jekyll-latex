@@ -32,3 +32,9 @@ bundle exec jekyll serve --watch
 Based on the amazing work below:
 - https://github.com/heiswayi/the-plain
 - https://github.com/vincentdoerig/latex-css
+
+## Licenses
+
+1. This project: MIT
+1. The Plain (of which this is based): MIT
+1. Latex CSS: MIT
