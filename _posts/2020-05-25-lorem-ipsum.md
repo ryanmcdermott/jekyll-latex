@@ -5,13 +5,37 @@ layout: post
 ---
 
 {% abstract %}
-The well known Pythagorean theorem \(x^2 + y^2 = z^2\) was
-proved to be invalid for other exponents.
-Meaning the next equation has no integer solutions:
+This project is called jekyll-latex. It features the beautiful typography of <span class="latex">L<span>a</span>T<span>e</span>X</span> and it includes MathJax so you can render gorgeous equations like this one below:
+$$ J(\theta) =\frac{1}{2m}
+[\sum^m_{i=1}(h_\theta(x^{(i)}) -
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 {% endabstract %}
 
+```
+{% raw %}
+{% abstract %}
+This project is called jekyll-latex. It features the beautiful
+typography of <span class="latex">L<span>a</span>T<span>e</span>X</span>
+and it includes MathJax so you can render gorgeous equations
+like this one below:
+$$ J(\theta) =\frac{1}{2m}
+[\sum^m_{i=1}(h_\theta(x^{(i)}) -
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
+{% endabstract %}
+{% endraw %}
+```
+
+# Table of Contents
 * TOC
 {:toc}
+
+```
+{% raw %}
+# Table of Contents
+* TOC
+{:toc}
+{% endraw %}
+```
 
 # Dolor
 
