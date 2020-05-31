@@ -19,7 +19,11 @@
 ## Installation
 ```
 git clone https://github.com/ryanmcdermott/jekyll-latex.git
+
 bundle install
+
+# Change all relevant settings for your site in _config.yml
+
 bundle exec jekyll serve --watch
 ```
 
