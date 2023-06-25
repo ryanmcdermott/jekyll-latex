@@ -14,8 +14,6 @@ body {
     padding: 2rem 1.25rem;
     counter-reset: theorem;
     counter-reset: definition;
-    color: hsl(0, 5%, 10%);
-    background-color: hsl(210, 20%, 98%);
     text-rendering: optimizeLegibility;
     display: flex;
     flex-direction: column;
@@ -282,7 +280,6 @@ pre {
     max-width: 100%;
     overflow: auto;
     border-radius: 4px;
-    background: hsl(210, 28%, 93%);
 }
 
 article {
