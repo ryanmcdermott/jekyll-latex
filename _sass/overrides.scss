@@ -1,0 +1,306 @@
+/* Make default font-size 1rem and add smooth scrolling to anchors */
+html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Latin Modern", Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.8;
+    max-width: 80ch;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+    counter-reset: theorem;
+    counter-reset: definition;
+    color: hsl(0, 5%, 10%);
+    background-color: hsl(210, 20%, 98%);
+    text-rendering: optimizeLegibility;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Justify and hyphenate all paragraphs */
+p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    margin-top: 1rem;
+}
+
+/* Heading typography */
+h1 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    margin-bottom: 1.625rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+h5 {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 2.5rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.625rem;
+}
+
+h1+h2 {
+    margin-top: 1.625rem;
+}
+
+h2+h3,
+h3+h4,
+h4+h5 {
+    margin-top: 0.8rem;
+}
+
+h5+h6 {
+    margin-top: -0.8rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.8rem;
+}
+
+.logo {
+    position: relative;
+    margin: 0 auto 35px;
+    text-align: center;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    animation-name: bounce;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: bounce;
+
+    a {
+        background: #ddd url("gravatar_wrapper.png");
+        color: #000;
+        text-decoration: none;
+        font-weight: 700;
+        height: 100px;
+        width: 100px;
+        font-size: 1.5em;
+        border-radius: 100%;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+        border: 5px solid #fff;
+        box-sizing: border-box;
+
+        &:hover,
+        &:focus {
+            background: #f14e32;
+        }
+
+        &:hover+.logo-prompt,
+        &:focus+.logo-prompt {
+            display: inline-block !important;
+        }
+
+        .gravatar {
+            margin: 5px auto;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 480px) {
+
+            &:hover+.logo-prompt,
+            &:focus+.logo-prompt {
+                display: none !important;
+            }
+        }
+    }
+
+    .logo-prompt {
+        position: absolute;
+        display: none;
+        vertical-align: middle;
+        padding: 5px;
+        border-radius: 3px;
+        background: #666;
+        background: rgba(0, 0, 0, 0.5);
+        margin-left: 15px;
+        color: #fff;
+        font-size: 0.8235em;
+        text-align: center;
+        line-height: 1.2;
+        top: 50%;
+        margin-top: -10px;
+
+        &:before {
+            content: "";
+            border-width: 5px 5px 5px 0;
+            border-style: solid;
+            border-color: transparent #666;
+            border-color: transparent rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 50%;
+            left: -5px;
+            margin-top: -5px;
+        }
+    }
+}
+
+section {
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 25px 0;
+
+            .title {
+                max-width: 100%;
+                //overflow: hidden !important;
+                //text-overflow: ellipsis !important;
+                //white-space: nowrap !important;
+                word-wrap: normal !important;
+            }
+
+            a {
+                text-decoration: none;
+                border: 0;
+                color: #000;
+                box-sizing: border-box;
+            }
+
+            .post-date {
+                float: right;
+                margin: 0 0 0 20px;
+            }
+
+            span {
+                display: inline-block;
+                color: #757575;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            @media (min-width: 992px) {
+                a {
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        border-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+kbd {
+    background: hsl(210, 5%, 100%);
+    border: 1px solid hsl(210, 5%, 70%);
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 75%;
+}
+
+/* Make table 100% width, add borders between rows */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+td {
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+
+thead th {
+    border-bottom: 2px solid hsl(0, 0%, 70%);
+}
+
+tfoot th {
+    border-top: 2px solid hsl(0, 0%, 70%);
+}
+
+a:focus {
+    outline-offset: 2px;
+    outline: 2px solid hsl(220, 90%, 52%);
+}
+
+/* Prevent textarea from overflowing */
+textarea {
+    width: 100%;
+}
+
+pre {
+    padding: 1rem 1.4rem;
+    max-width: 100%;
+    overflow: auto;
+    border-radius: 4px;
+    background: hsl(210, 28%, 93%);
+}
+
+article {
+
+    /* Nested ordered list for ToC */
+    .markdown-toc ol,
+    ul {
+        counter-reset: item;
+        padding-left: 2rem;
+
+        li {
+            display: block;
+        }
+
+        li:before {
+            content: counters(item, ".") " ";
+            counter-increment: item;
+            padding-right: 0.85rem;
+        }
+    }
+}
