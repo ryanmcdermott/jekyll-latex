@@ -1,6 +1,6 @@
 /* Make default font-size 1rem and add smooth scrolling to anchors */
 html {
-    font-size: 1rem;
+    font-size: 1.2rem;
     scroll-behavior: smooth;
 }
 
@@ -179,6 +179,38 @@ h6 {
     }
 }
 
+.page-navigation,
+.footer {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.page-navigation {
+    margin: 50px auto 0 auto;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    span {
+        display: inline-block;
+    }
+}
+
+.footer {
+    margin-top: 50px;
+    color: #777;
+
+    a {
+        border: none;
+        font-weight: bold;
+    }
+}
+
 section {
     max-width: 500px;
     margin: 0 auto 50px auto;
@@ -232,7 +264,6 @@ section {
 }
 
 kbd {
-    background: hsl(210, 5%, 100%);
     border: 1px solid hsl(210, 5%, 70%);
     border-radius: 2px;
     padding: 2px 4px;
