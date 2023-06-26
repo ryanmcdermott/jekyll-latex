@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-	{% include head.html %}
+	{% include head.liquid %}
 </head>
 
 <body class="latex-dark">
-	{% include header.html %}
+	{% include header.liquid %}
 
 	<main>
 		{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
 	</main>
 
-	{% include footer.html %}
+	{% include footer.liquid %}
 </body>
 
 </html>

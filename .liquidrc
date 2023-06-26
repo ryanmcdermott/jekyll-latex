@@ -1,21 +1,4 @@
 {
-  "ignore": [
-    {
-      "type": "liquid",
-      "begin": "comment",
-      "end": "endcomment"
-    },
-    {
-      "type": "html",
-      "begin": "script",
-      "end": "script"
-    },
-    {
-      "type": "html",
-      "begin": "style",
-      "end": "style"
-    }
-  ],
   "html": {
     "correct": false,
     "force_attribute": false,
@@ -44,11 +27,5 @@
     "preserve": 2,
     "braces": false,
     "brace_block": true
-  },
-  "json": {
-    "preserve": 0,
-    "braces": false,
-    "brace_block": true,
-    "no_semicolon": true
   }
 }
