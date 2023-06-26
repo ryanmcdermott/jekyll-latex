@@ -1,1 +1,1 @@
-Sitemap: https://yoursite.com/sitemap.xml
+Sitemap: https://ryanmcdermott.me/jekyll-latex/sitemap.xml

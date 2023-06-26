@@ -3,7 +3,7 @@
   <channel>
     <title>Jekyll Latex</title>
     <description>A pretty good Jekyll theme</description>
-    <link>https://yoursite.com</link>
+    <link>https://ryanmcdermott.me/jekyll-latex</link>
     
       
         <item>
@@ -15,7 +15,7 @@ $$ J(\theta) =\frac{1}{2m}
 y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 &lt;/p&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 {% abstract %}
 This project is called jekyll-latex. It features the beautiful
 typography of &amp;lt;span class=&quot;latex&quot;&amp;gt;L&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;T&amp;lt;span&amp;gt;
@@ -47,7 +47,7 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 # Table of Contents
 * TOC
 {:toc}
@@ -104,7 +104,7 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 
 &lt;p&gt;This sentence is &lt;strong&gt;bold&lt;/strong&gt;. This sentence is &lt;em&gt;italic&lt;/em&gt;. &lt;small&gt;Small&lt;/small&gt; text is for fine print. Your copy can also be &lt;sub&gt;subscripted&lt;/sub&gt; and &lt;sup&gt;superscripted&lt;/sup&gt;, &lt;ins&gt;inserted&lt;/ins&gt;, &lt;del&gt;deleted&lt;/del&gt;, or &lt;mark&gt;highlighted&lt;/mark&gt;. You would use a &lt;a href=&quot;https://github.com/ryanmcdermott/jekyll-latex&quot;&gt;hyperlink&lt;/a&gt; to go to a new page. Keyboard input elements like &lt;kbd&gt;Cmd + Shift&lt;/kbd&gt; are used to display textual user input.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This sentence is **bold**. This sentence is *italic*.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This sentence is **bold**. This sentence is *italic*.
 &amp;lt;small&amp;gt;Small&amp;lt;/small&amp;gt; text is for fine print. Your
 copy can also be &amp;lt;sub&amp;gt;subscripted&amp;lt;/sub&amp;gt; and
 &amp;lt;sup&amp;gt;superscripted&amp;lt;/sup&amp;gt;, &amp;lt;ins&amp;gt;inserted&amp;lt;/ins&amp;gt;,
@@ -196,7 +196,7 @@ sharpening the axe.
     &lt;figcaption&gt;Mountain landscape by John Towner.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 {% include image.html
     url=&quot;/assets/latex_image_example.jpeg&quot;
     description=&quot;Mountain landscape by John Towner.&quot;
@@ -221,7 +221,7 @@ sharpening the axe.
   &lt;li&gt;List Item 3&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 ### Unordered List
 - List Item 1
 - List Item 2
@@ -236,8 +236,8 @@ sharpening the axe.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
           <pubDate>2020-05-25T00:00:00-07:00</pubDate>
-          <link>https://yoursite.com/posts/what-is-jekyll-latex</link>
-          <guid isPermaLink="true">https://yoursite.com/posts/what-is-jekyll-latex</guid>
+          <link>https://ryanmcdermott.me/jekyll-latex/posts/what-is-jekyll-latex</link>
+          <guid isPermaLink="true">https://ryanmcdermott.me/jekyll-latex/posts/what-is-jekyll-latex</guid>
         </item>
       
     
