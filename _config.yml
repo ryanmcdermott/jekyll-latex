@@ -29,6 +29,7 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
 
 paginate: 1
 paginate_path: "/blog/page:num/"
