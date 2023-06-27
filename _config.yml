@@ -30,6 +30,8 @@ exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 plugins:
   - jekyll-sitemap
 
+paginate: 1
+paginate_path: "/blog/page:num/"
 
 defaults:
   -
