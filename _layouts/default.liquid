@@ -8,9 +8,7 @@
 <body class="latex-dark">
 	{% include header.liquid %}
 
-	<main>
-		{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
-	</main>
+	{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
 
 	{% include footer.liquid %}
 </body>

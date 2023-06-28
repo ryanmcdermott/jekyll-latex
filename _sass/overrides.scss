@@ -332,3 +332,18 @@ article {
         }
     }
 }
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.post-list {
+    margin: 0;
+    flex: 1;
+}
+
+.pagination-container {
+    align-self: center;
+}

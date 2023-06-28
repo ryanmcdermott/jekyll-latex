@@ -1,47 +1,59 @@
-<section>
-  {% for post in paginator.posts %}
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }} &#172;</h3>
-    {% else %}
-      {% capture year %}
-        {{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}
-        {{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
+<main class="main-container">
+  <section class="post-list">
+    {% for post in paginator.posts %}
+      {% unless post.next %}
         <h3>{{ post.date | date: '%Y' }} &#172;</h3>
+      {% else %}
+        {% capture year %}
+          {{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}
+          {{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <h3>{{ post.date | date: '%Y' }} &#172;</h3>
+        {% endif %}
+      {% endunless %}
+
+      <ul>
+        <li>
+          <div class="post-date">
+            <span>{{ post.date | date: "%b %d" }}</span>
+          </div>
+          <div class="title">
+            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+          </div>
+        </li>
+      </ul>
+
+    {% endfor %}
+  </section>
+
+  <section class="pagination-container">
+    <div class="pagination" style="text-align: center; color: #fff; padding: 10px; border-radius: 5px;">
+      {% if paginator.previous_page %}
+        <a
+          href="{{ paginator.previous_page_path }}"
+          class="previous"
+          style="margin-right: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">
+          Previous
+        </a>
+      {% else %}
+        <span class="previous" style="margin-right: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
+          Previous
+        </span>
       {% endif %}
-    {% endunless %}
-
-    <ul>
-      <li>
-        <div class="post-date">
-          <span>{{ post.date | date: "%b %d" }}</span>
-        </div>
-        <div class="title">
-          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
-        </div>
-      </li>
-    </ul>
-
-  {% endfor %}
-</section>
-
-<section>
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">
-        Previous
-      </a>
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number ">
-      Page: {{ paginator.page }} of {{ paginator.total_pages }}
-    </span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
-  </div>
-</section>
+      <span class="page_number " style="margin: 0 10px; color: #fff;">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+      </span>
+      {% if paginator.next_page %}
+        <a
+          href="{{ paginator.next_page_path }}"
+          class="next"
+          style="margin-left: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">Next</a>
+      {% else %}
+        <span class="next" style="margin-left: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
+          Next
+        </span>
+      {% endif %}
+    </div>
+  </section>
+</main>
