@@ -110,7 +110,6 @@ h6 {
 
     a {
         background: #ddd url("gravatar_wrapper.png");
-        color: #000;
         text-decoration: none;
         font-weight: 700;
         height: 100px;
@@ -155,10 +154,10 @@ h6 {
         vertical-align: middle;
         padding: 5px;
         border-radius: 3px;
-        background: #666;
+        // background: #666;
         background: rgba(0, 0, 0, 0.5);
         margin-left: 15px;
-        color: #fff;
+        // color: #fff;
         font-size: 0.8235em;
         text-align: center;
         line-height: 1.2;
@@ -169,8 +168,8 @@ h6 {
             content: "";
             border-width: 5px 5px 5px 0;
             border-style: solid;
-            border-color: transparent #666;
-            border-color: transparent rgba(0, 0, 0, 0.5);
+            // border-color: transparent #666;
+            // border-color: transparent rgba(0, 0, 0, 0.5);
             position: absolute;
             top: 50%;
             left: -5px;
@@ -203,7 +202,7 @@ h6 {
 
 .footer {
     margin-top: 50px;
-    color: #777;
+    // color: #777;
 
     a {
         border: none;
@@ -234,7 +233,7 @@ section {
             a {
                 text-decoration: none;
                 border: 0;
-                color: #000;
+                // color: #000;
                 box-sizing: border-box;
             }
 
@@ -245,7 +244,7 @@ section {
 
             span {
                 display: inline-block;
-                color: #757575;
+                // color: #757575;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
@@ -255,7 +254,7 @@ section {
                     border-bottom: 2px solid transparent;
 
                     &:hover {
-                        border-color: #000;
+                        // border-color: #000;
                     }
                 }
             }
@@ -337,6 +336,7 @@ article {
     display: flex;
     flex-direction: column;
     align-self: center;
+    width: 20rem;
 }
 
 .post-list {

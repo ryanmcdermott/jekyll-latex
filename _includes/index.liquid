@@ -27,33 +27,35 @@
     {% endfor %}
   </section>
 
-  <section class="pagination-container">
-    <div class="pagination" style="text-align: center; color: #fff; padding: 10px; border-radius: 5px;">
-      {% if paginator.previous_page %}
-        <a
-          href="{{ paginator.previous_page_path }}"
-          class="previous"
-          style="margin-right: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">
-          Previous
-        </a>
-      {% else %}
-        <span class="previous" style="margin-right: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
-          Previous
+  {% if paginator.total_pages > 1 %}
+    <section class="pagination-container">
+      <div class="pagination" style="text-align: center; color: #fff; padding: 10px; border-radius: 5px;">
+        {% if paginator.previous_page %}
+          <a
+            href="{{ paginator.previous_page_path }}"
+            class="previous"
+            style="margin-right: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">
+            Previous
+          </a>
+        {% else %}
+          <span class="previous" style="margin-right: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
+            Previous
+          </span>
+        {% endif %}
+        <span class="page_number " style="margin: 0 10px; color: #fff;">
+          Page: {{ paginator.page }} of {{ paginator.total_pages }}
         </span>
-      {% endif %}
-      <span class="page_number " style="margin: 0 10px; color: #fff;">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
-      </span>
-      {% if paginator.next_page %}
-        <a
-          href="{{ paginator.next_page_path }}"
-          class="next"
-          style="margin-left: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">Next</a>
-      {% else %}
-        <span class="next" style="margin-left: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
-          Next
-        </span>
-      {% endif %}
-    </div>
-  </section>
+        {% if paginator.next_page %}
+          <a
+            href="{{ paginator.next_page_path }}"
+            class="next"
+            style="margin-left: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">Next</a>
+        {% else %}
+          <span class="next" style="margin-left: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
+            Next
+          </span>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
 </main>
