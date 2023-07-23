@@ -154,10 +154,8 @@ h6 {
         vertical-align: middle;
         padding: 5px;
         border-radius: 3px;
-        // background: #666;
         background: rgba(0, 0, 0, 0.5);
         margin-left: 15px;
-        // color: #fff;
         font-size: 0.8235em;
         text-align: center;
         line-height: 1.2;
@@ -168,8 +166,6 @@ h6 {
             content: "";
             border-width: 5px 5px 5px 0;
             border-style: solid;
-            // border-color: transparent #666;
-            // border-color: transparent rgba(0, 0, 0, 0.5);
             position: absolute;
             top: 50%;
             left: -5px;
@@ -202,7 +198,6 @@ h6 {
 
 .footer {
     margin-top: 50px;
-    // color: #777;
 
     a {
         border: none;
@@ -224,16 +219,11 @@ section {
 
             .title {
                 max-width: 100%;
-                //overflow: hidden !important;
-                //text-overflow: ellipsis !important;
-                //white-space: nowrap !important;
                 word-wrap: normal !important;
             }
 
             a {
-                text-decoration: none;
                 border: 0;
-                // color: #000;
                 box-sizing: border-box;
             }
 
