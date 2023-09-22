@@ -5,12 +5,12 @@ google_verify:      abc123 # Put your Google Verification here
 google_analytics:   UA-123
 
 # Author Info
-author_name:        "John Doe" # Your name here
-author_email:       john@doe.com # Your email here
-author_gravatar:    e98e5de03e97f8498caab87e85a43f9a # Your Gravatar md5 hash here for logo
+author_name:        Uğur Gümüş # Your name here
+author_email:       agrogur@gmail.com # Your email here
+author_gravatar:    31b93c394e7be48e5574f86ab3bc9fff926945f058a2f8ede65d0e8c41811334 # Your Gravatar md5 hash here for logo
 
 # Site Settings
-url:                 https://ryanmcdermott.me/jekyll-latex # Change to your site
+url:                 agrogur.github.io/scientific-journal # Change to your site
 baseurl:
 permalink:          /posts/:title # Post permalink
 timezone:           America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
